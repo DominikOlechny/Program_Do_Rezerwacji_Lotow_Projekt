@@ -30,7 +30,7 @@ namespace Program_Do_Rezerwacji_Lotow
                 Console.WriteLine("1. Wyszukaj loty");
                 Console.WriteLine("2. Dokonaj rezerwacji");
                 Console.WriteLine("3. Anuluj rezerwację");
-                Console.WriteLine("4. Zobacz listę pasażerów");
+                Console.WriteLine("4. Sprawdź Swoje Rezerwacje");
                 Console.WriteLine("5. Oblicz płatność");
                 Console.WriteLine("6. Wyjdź");
 
