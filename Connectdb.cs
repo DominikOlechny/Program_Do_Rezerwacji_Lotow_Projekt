@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Program_Do_Rezerwacji_Lotow
+﻿namespace Program_Do_Rezerwacji_Lotow
 {
     public class Connectdb // Klasa Connectdb zarządza połączeniem z bazą danych, która jest reprezentowana przez plik CSV.
     {
@@ -47,13 +41,13 @@ namespace Program_Do_Rezerwacji_Lotow
                 return;
             }
 
-            
+
             Console.WriteLine("ID Rezerwacji | Miejsce Odlotu | Miejsce Przylotu | Data Odlotu | Data Przylotu | Ilość KM"); // Wyświetlanie nagłówków dla każdej kolumny.
             Console.WriteLine(new String('-', 80)); // Linia oddzielająca
 
             foreach (var fields in allFields) // Iteracja przez wszystkie rekordy i ich wyświetlanie.
             {
-                if (fields.Length >= 6) 
+                if (fields.Length >= 6)
                 {
                     string formattedLine = String.Format("{0,-15} {1,-15} {2,-15} {3,-15} {4,-15} {5,-15}",
                         fields[0], fields[1], fields[2], fields[3], fields[4], fields[5]);
@@ -63,10 +57,10 @@ namespace Program_Do_Rezerwacji_Lotow
                 {
                     Console.WriteLine("Niekompletny rekord: " + String.Join(" | ", fields));
                 }
-                
+
             }
             Console.WriteLine("Nacisnij dowolny klawisz, aby kontynułowac.....");
-        Console.ReadKey();
+            Console.ReadKey();
         }
         public void wyszukajpoid(string id) // Wyszukuje w bazie danych rekordy o podanym ID rezerwacji.
         {
@@ -90,7 +84,7 @@ namespace Program_Do_Rezerwacji_Lotow
                         fields[0], fields[1], fields[2], fields[3], fields[4], fields[5]); // Formatowanie i wyświetlenie znalezionego rekordu.
                     Console.WriteLine(formattedLine);
                 }
-                
+
             }
 
             if (!found)     // Jeśli żaden rekord nie został znaleziony, wyświetl odpowiedni komunikat.

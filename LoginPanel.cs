@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Program_Do_Rezerwacji_Lotow
+﻿namespace Program_Do_Rezerwacji_Lotow
 {
     namespace Program_Do_Rezerwacji_Lotow
     {
@@ -24,12 +18,12 @@ namespace Program_Do_Rezerwacji_Lotow
                 // Wyświetl monit o wprowadzenie nazwy użytkownika i hasła.
                 Console.WriteLine("Proszę się zalogować.");
 
-                Console.Write("Nazwa użytkownika: ");    
+                Console.Write("Nazwa użytkownika: ");
                 string username = Console.ReadLine();
 
                 Console.Write("Hasło: ");
                 string password = Console.ReadLine();
-                
+
                 return VerifyCredentialsFromCsv(username, password);    // Zwróć wynik uwierzytelnienia oraz nazwę użytkownika.
             }
 

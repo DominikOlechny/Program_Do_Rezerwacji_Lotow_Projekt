@@ -1,17 +1,11 @@
-﻿using Program_Do_Rezerwacji_Lotow.Program_Do_Rezerwacji_Lotow;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-namespace Program_Do_Rezerwacji_Lotow
+﻿namespace Program_Do_Rezerwacji_Lotow
 { // Klasa MainMenu reprezentuje główne menu programu i zarządza nawigacją użytkownika.
     public class MainMenu
     {
         // Instancje menedżerów odpowiedzialnych za różne aspekty aplikacji.
         private readonly FlightManager flightManager;
         private readonly ReservationManager reservationManager;
-        private string username; 
+        private string username;
 
 
         public MainMenu(string username)   // Konstruktor MainMenu inicjalizuje menedżerów i inne komponenty.
@@ -25,8 +19,8 @@ namespace Program_Do_Rezerwacji_Lotow
         {
             while (true) // Logika wyświetlania menu
             {
-   
-                Console.WriteLine("\nProszę wybrać opcję:"); 
+
+                Console.WriteLine("\nProszę wybrać opcję:");
                 Console.WriteLine("1. Wyszukaj loty");
                 Console.WriteLine("2. Dokonaj rezerwacji");
                 Console.WriteLine("3. Anuluj rezerwację");

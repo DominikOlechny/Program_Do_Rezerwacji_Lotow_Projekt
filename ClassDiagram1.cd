@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Program_Do_Rezerwacji_Lotow.Connectdb">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAIAAAAAAAACAABAAAAAEAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Connectdb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Program_Do_Rezerwacji_Lotow.FlightManager">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FlightManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Program_Do_Rezerwacji_Lotow.Program_Do_Rezerwacji_Lotow.LoginPanel">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAEAAAIAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>LoginPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Program_Do_Rezerwacji_Lotow.MainMenu">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAEAAAAAAgAAAAAAQAAAAAA=</HashCode>
+      <FileName>MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Program_Do_Rezerwacji_Lotow.Program">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Program_Do_Rezerwacji_Lotow.ReservationManager">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAEAJAABAAAAAAEAAAEAAAAAAEAAgAAAAAA=</HashCode>
+      <FileName>ReservationManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Program_Do_Rezerwacji_Lotow.FlightSeat">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAJAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>ReservationManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Program_Do_Rezerwacji_Lotow.Timer">
+    <Position X="7" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Timer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

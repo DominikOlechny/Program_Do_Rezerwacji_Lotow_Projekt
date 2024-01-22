@@ -1,6 +1,4 @@
-﻿using Program_Do_Rezerwacji_Lotow;
-using Program_Do_Rezerwacji_Lotow.Program_Do_Rezerwacji_Lotow;
-using System;
+﻿using Program_Do_Rezerwacji_Lotow.Program_Do_Rezerwacji_Lotow;
 
 namespace Program_Do_Rezerwacji_Lotow
 {
@@ -10,8 +8,8 @@ namespace Program_Do_Rezerwacji_Lotow
         {
             LoginPanel loginPanel = new LoginPanel();
             (bool isAuthenticated, string username) = loginPanel.Authenticate();
-        
-                if (!isAuthenticated)
+
+            if (!isAuthenticated)
             {
                 Console.WriteLine("Logowanie nieudane. Program zostanie zakończony.");
                 return;

@@ -1,9 +1,4 @@
 ﻿using Program_Do_Rezerwacji_Lotow.Program_Do_Rezerwacji_Lotow;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Program_Do_Rezerwacji_Lotow
 {

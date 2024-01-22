@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Program_Do_Rezerwacji_Lotow
+﻿namespace Program_Do_Rezerwacji_Lotow
 
 {
     public class FlightManager // Klasa FlightManager zarządza funkcjonalnościami związanymi z wyszukiwaniem lotów.
