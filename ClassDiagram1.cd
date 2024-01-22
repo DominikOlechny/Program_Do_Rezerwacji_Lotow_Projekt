@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Program_Do_Rezerwacji_Lotow.Connectdb">
-    <Position X="2" Y="0.5" Width="1.5" />
+    <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQAIAAAAAAAACAABAAAAAEAAAAAAAAAQAAAAAA=</HashCode>
+      <HashCode>AAAEQAQAIAAQBAAAAAAABAAAAAEAAAAAQAAAAAAAAAA=</HashCode>
       <FileName>Connectdb.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.FlightManager">
     <Position X="4" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAgAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FlightManager.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -36,7 +36,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.ReservationManager">
-    <Position X="2.25" Y="3.75" Width="1.5" />
+    <Position X="4.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAEAJAABAAAAAAEAAAEAAAAAAEAAgAAAAAA=</HashCode>
       <FileName>ReservationManager.cs</FileName>
