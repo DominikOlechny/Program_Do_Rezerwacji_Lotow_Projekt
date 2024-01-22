@@ -26,7 +26,7 @@ namespace Program_Do_Rezerwacji_Lotow
             while (true) // Logika wyświetlania menu
             {
    
-                Console.WriteLine("\nProszę wybrać opcję:");
+                Console.WriteLine("\nProszę wybrać opcję:"); //test
                 Console.WriteLine("1. Wyszukaj loty");
                 Console.WriteLine("2. Dokonaj rezerwacji");
                 Console.WriteLine("3. Anuluj rezerwację");
