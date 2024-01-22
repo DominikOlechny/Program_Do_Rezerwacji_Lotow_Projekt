@@ -1,19 +1,36 @@
 ﻿namespace Program_Do_Rezerwacji_Lotow
 {
-    public class Connectdb // Klasa Connectdb zarządza połączeniem z bazą danych, która jest reprezentowana przez plik CSV.
+    public class Connectdb
     {
+        private static Connectdb _instance;
+        private List<string[]> allFields;
 
-        // Lista przechowująca wszystkie rekordy z pliku CSV.
-        private List<string[]> allFields = new List<string[]>();
-
-        public void connectdb()   /// Łączy się z bazą danych przez wczytanie danych z pliku CSV.
+        // Prywatny konstruktor
+        private Connectdb()
         {
-            string currentDirectory = Directory.GetCurrentDirectory(); // Ścieżka do bieżącego katalogu aplikacji.
-            string filePath = Path.Combine(currentDirectory, "rezerwacje_lotow_nopl.csv");    // Pełna ścieżka do pliku z rezerwacjami lotów
+            allFields = new List<string[]>();
+            LoadData();
+        }
+
+        // Publiczna metoda statyczna do uzyskiwania instancji
+        public static Connectdb Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new Connectdb();
+                }
+                return _instance;
+            }
+        }
+
+        private void LoadData()
+        {
+            string filePath = GetFilePath();
 
             try
             {
-                // Otwarcie pliku CSV i wczytanie danych do listy allFields.
                 using (StreamReader sr = new StreamReader(filePath))
                 {
                     while (!sr.EndOfStream)
@@ -26,26 +43,23 @@
             }
             catch (Exception e)
             {
-                // Obsługa wyjątków związanych z odczytem pliku.
                 Console.WriteLine("Błąd podczas odczytu pliku:");
                 Console.WriteLine(e.Message);
             }
         }
-        public void wypiszbaze() // Wyświetla bazę danych w konsoli.
 
+        public void WypiszBaze()
         {
-            connectdb(); //połączenie z bazą danych zostało nawiązane.
-            if (allFields.Count == 0)// Sprawdzenie czy lista danych nie jest pusta.
+            if (allFields.Count == 0)
             {
                 Console.WriteLine("Brak danych do wyświetlenia.");
                 return;
             }
 
+            Console.WriteLine("ID Rezerwacji | Miejsce Odlotu | Miejsce Przylotu | Data Odlotu | Data Przylotu | Ilość KM");
+            Console.WriteLine(new String('-', 80));
 
-            Console.WriteLine("ID Rezerwacji | Miejsce Odlotu | Miejsce Przylotu | Data Odlotu | Data Przylotu | Ilość KM"); // Wyświetlanie nagłówków dla każdej kolumny.
-            Console.WriteLine(new String('-', 80)); // Linia oddzielająca
-
-            foreach (var fields in allFields) // Iteracja przez wszystkie rekordy i ich wyświetlanie.
+            foreach (var fields in allFields)
             {
                 if (fields.Length >= 6)
                 {
@@ -57,14 +71,14 @@
                 {
                     Console.WriteLine("Niekompletny rekord: " + String.Join(" | ", fields));
                 }
-
             }
             Console.WriteLine("Nacisnij dowolny klawisz, aby kontynułowac.....");
             Console.ReadKey();
         }
+
         public void wyszukajpoid(string id) // Wyszukuje w bazie danych rekordy o podanym ID rezerwacji.
         {
-            connectdb(); // Wczytanie danych
+            LoadData(); // Wczytanie danych
             bool found = false;
 
             foreach (var fields in allFields) // Iteracja przez listę w poszukiwaniu rekordów o podanym ID.
@@ -97,7 +111,7 @@
 
         public void wyszukajpoodlotach(string odlot) // Wyszukuje w bazie danych rekordy na podstawie miejsca odlotu.
         {
-            connectdb(); //dane zostały wczytane
+            LoadData (); //dane zostały wczytane
             bool found = false;
 
             foreach (var fields in allFields)// Iteracja przez wszystkie rekordy w poszukiwaniu odlotu.
@@ -129,7 +143,7 @@
 
         public void wyszukajpodpcelowych(string cel) // Wyszukuje w bazie danych rekordy na podstawie miejsca przylotu.
         {
-            connectdb(); // dane zostały wczytane
+            LoadData(); // dane zostały wczytane
             bool found = false;
 
             foreach (var fields in allFields) // Iteracja przez wszystkie rekordy w poszukiwaniu przylotu.
@@ -159,7 +173,10 @@
             Console.ReadKey();
         }
 
-
-
+        private string GetFilePath()
+        {
+            string currentDirectory = Directory.GetCurrentDirectory();
+            return Path.Combine(currentDirectory, "rezerwacje_lotow_nopl.csv");
+        }
     }
 }
