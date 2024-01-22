@@ -11,7 +11,7 @@ namespace Program_Do_Rezerwacji_Lotow
         // Instancje menedżerów odpowiedzialnych za różne aspekty aplikacji.
         private readonly FlightManager flightManager;
         private readonly ReservationManager reservationManager;
-        private string username; // Add a field to store username
+        private string username; 
 
 
         public MainMenu(string username)   // Konstruktor MainMenu inicjalizuje menedżerów i inne komponenty.
@@ -26,7 +26,7 @@ namespace Program_Do_Rezerwacji_Lotow
             while (true) // Logika wyświetlania menu
             {
    
-                Console.WriteLine("\nProszę wybrać opcję:"); //test
+                Console.WriteLine("\nProszę wybrać opcję:"); 
                 Console.WriteLine("1. Wyszukaj loty");
                 Console.WriteLine("2. Dokonaj rezerwacji");
                 Console.WriteLine("3. Anuluj rezerwację");
