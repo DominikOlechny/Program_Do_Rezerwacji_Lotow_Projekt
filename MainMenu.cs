@@ -49,9 +49,6 @@
                         reservationManager.DisplayUserReservations();
                         break;
                     case "5":
-                        Console.WriteLine("Oblicz płatność");
-                        break;
-                    case "6":
                         Console.WriteLine("Wychodzenie z systemu rezerwacji miejsc w samolotach...");
                         return;
                     default:

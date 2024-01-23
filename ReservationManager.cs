@@ -109,7 +109,6 @@ namespace Program_Do_Rezerwacji_Lotow
 
             decimal insuranceCost = hasInsurance ? 50m : 0m; // Dodatkowa opłata za ubezpieczenie
             decimal luggageCost = hasExtraLuggage ? 25m : 0m; // Dodatkowa opłata za nadwagowy bagaż
-            decimal totalcost = baseCost + insuranceCost + luggageCost;
             return baseCost + insuranceCost + luggageCost;
         }
         public void CancelReservation()
