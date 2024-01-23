@@ -39,7 +39,7 @@ namespace Program_Do_Rezerwacji_Lotow
                     FlightId = int.Parse(parts[0]),
                     SeatNumber = parts[1],
                     IsAvailable = parts[2] == "Available",
-                    ReservedBy = parts[3]
+                    ReservedBy = parts[3],
                 };
                 flightSeats.Add(flightSeat);
             }
@@ -109,7 +109,7 @@ namespace Program_Do_Rezerwacji_Lotow
 
             decimal insuranceCost = hasInsurance ? 50m : 0m; // Dodatkowa opłata za ubezpieczenie
             decimal luggageCost = hasExtraLuggage ? 25m : 0m; // Dodatkowa opłata za nadwagowy bagaż
-
+            decimal totalcost = baseCost + insuranceCost + luggageCost;
             return baseCost + insuranceCost + luggageCost;
         }
         public void CancelReservation()
@@ -169,7 +169,14 @@ namespace Program_Do_Rezerwacji_Lotow
         private void UpdateCsvFile()
         {
             var lines = new List<string> { "FlightId,SeatNumber,Availability,ReservedBy" }; // Dodano nagłówek dla ReservedBy
-            lines.AddRange(flightSeats.Select(f => $"{f.FlightId},{f.SeatNumber},{(f.IsAvailable ? "Available" : "Occupied")},{f.ReservedBy}"));
+            lines.AddRange(flightSeats.Select(f =>
+        $"{f.FlightId}," +
+        $"{f.SeatNumber}," +
+        $"{(f.IsAvailable ? "Available" : "Occupied")}," +
+        $"{f.ReservedBy}," +
+        $"{(f.HasInsurance ? "Yes" : "No")}," +
+        $"{(f.HasExtraLuggage ? "Yes" : "No")}"
+    ));
             File.WriteAllLines(csvFilePath, lines);
         } 
     }
@@ -185,5 +192,6 @@ namespace Program_Do_Rezerwacji_Lotow
         public char SeatClass { get; set; } // 'A', 'B', 'C' itd.
         public bool HasInsurance { get; set; }
         public bool HasExtraLuggage { get; set; }
+     
     }
 }
