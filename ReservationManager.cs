@@ -74,12 +74,44 @@ namespace Program_Do_Rezerwacji_Lotow
                 return;
             }
 
+            // Pobieranie klasy miejsca na podstawie numeru miejsca
+            char seatClass = selectedSeat.SeatNumber[1]; // Zakładając, że klasa jest pierwszym znakiem numeru miejsca
+            selectedSeat.SeatClass = seatClass;
+
+            // Pytanie o ubezpieczenie
+            Console.WriteLine("Czy chcesz dodać ubezpieczenie? (tak/nie)");
+            selectedSeat.HasInsurance = Console.ReadLine().Trim().ToLower() == "tak";
+
+            // Pytanie o nadwagowy bagaż
+            Console.WriteLine("Czy masz nadwagowy bagaż? (tak/nie)");
+            selectedSeat.HasExtraLuggage = Console.ReadLine().Trim().ToLower() == "tak";
+
+            // Obliczanie kosztów
+            decimal cost = CalculateReservationCost(seatClass, selectedSeat.HasInsurance, selectedSeat.HasExtraLuggage);
+            Console.WriteLine($"Koszt rezerwacji: {cost} PLN");
+
             selectedSeat.IsAvailable = false;
             selectedSeat.ReservedBy = this.username; // Rezerwacja miejsca przez zalogowanego użytkownika
+
             UpdateCsvFile();
             Console.WriteLine($"Rezerwacja miejsca {seatNumber} na lot ID {flightId} została dokonana przez {this.username}.");
         }
+        private decimal CalculateReservationCost(char seatClass, bool hasInsurance, bool hasExtraLuggage)
+        {
+            decimal baseCost = seatClass switch
+            {
+                'A' => 200m, // Przykładowe ceny dla różnych klas
+                'B' => 150m,
+                'C' => 100m,
+                'D' => 50m,
+               _ => 0m,
+            }; ;
 
+            decimal insuranceCost = hasInsurance ? 50m : 0m; // Dodatkowa opłata za ubezpieczenie
+            decimal luggageCost = hasExtraLuggage ? 25m : 0m; // Dodatkowa opłata za nadwagowy bagaż
+
+            return baseCost + insuranceCost + luggageCost;
+        }
         public void CancelReservation()
         {
             Console.WriteLine("Wybierz ID lotu, dla którego chcesz anulować rezerwację:");
@@ -139,8 +171,10 @@ namespace Program_Do_Rezerwacji_Lotow
             var lines = new List<string> { "FlightId,SeatNumber,Availability,ReservedBy" }; // Dodano nagłówek dla ReservedBy
             lines.AddRange(flightSeats.Select(f => $"{f.FlightId},{f.SeatNumber},{(f.IsAvailable ? "Available" : "Occupied")},{f.ReservedBy}"));
             File.WriteAllLines(csvFilePath, lines);
-        }
+        } 
     }
+
+
 
     public class FlightSeat
     {
@@ -148,5 +182,8 @@ namespace Program_Do_Rezerwacji_Lotow
         public int FlightId { get; set; }
         public string SeatNumber { get; set; }
         public bool IsAvailable { get; set; }
+        public char SeatClass { get; set; } // 'A', 'B', 'C' itd.
+        public bool HasInsurance { get; set; }
+        public bool HasExtraLuggage { get; set; }
     }
 }
