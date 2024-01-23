@@ -25,8 +25,7 @@
                 Console.WriteLine("2. Dokonaj rezerwacji");
                 Console.WriteLine("3. Anuluj rezerwację");
                 Console.WriteLine("4. Sprawdź Swoje Rezerwacje");
-                Console.WriteLine("5. Oblicz płatność");
-                Console.WriteLine("6. Wyjdź");
+                Console.WriteLine("5. Wyjdz");
 
                 Console.Write("Wprowadź swój wybór: ");
                 string choice = Console.ReadLine();

@@ -3,14 +3,14 @@
   <Class Name="Program_Do_Rezerwacji_Lotow.Connectdb">
     <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEQAQAIAAQBAAAAAAABAAAAAEAAAAAQAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAQAIAAAAAAAACAABAAAAAEAAAAAAAAAQAAAAAA=</HashCode>
       <FileName>Connectdb.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.FlightManager">
-    <Position X="4" Y="1.5" Width="1.5" />
+    <Position X="7.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAgAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FlightManager.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -38,14 +38,14 @@
   <Class Name="Program_Do_Rezerwacji_Lotow.ReservationManager">
     <Position X="4.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAEAJAABAAAAAAEAAAEAAAAAAEAAgAAAAAA=</HashCode>
+      <HashCode>ABAAAAAAAAEAJAABAAAAAAEAAAEAAAAAAEAAgIAAAAA=</HashCode>
       <FileName>ReservationManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.FlightSeat">
     <Position X="9.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAJAAAAAAAAAAIAAAAA=</HashCode>
+      <HashCode>AAAAgAAACBAAAAAAAAAAAAAAAAJAAAAAQAAAAIAAAAA=</HashCode>
       <FileName>ReservationManager.cs</FileName>
     </TypeIdentifier>
   </Class>
