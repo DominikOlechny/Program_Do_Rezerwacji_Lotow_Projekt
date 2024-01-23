@@ -3,16 +3,12 @@
 {
     public class FlightManager // Klasa FlightManager zarządza funkcjonalnościami związanymi z wyszukiwaniem lotów.
     {
-
-       
-
+        Connectdb connectdb = new Connectdb(); // Instancja klasy Connectdb do zarządzania danymi bazy.
+        Timer timer = new Timer(); // Instancja klasy Timer do obsługi opóźnień.
 
         public void SearchFlights() // Metoda SearchFlights wyświetla menu pozwalające użytkownikowi na wyszukiwanie lotów
                                     // według różnych kryteriów oraz obsługuje interakcję z użytkownikiem.
         {
-            Timer timer = new Timer(); // Instancja klasy Timer do obsługi opóźnień.
-            Connectdb connectdb = Connectdb.Instance;
-
             bool isRunning = true;  // Zmienna kontrolująca działanie pętli menu.
             while (isRunning)
             {
@@ -49,8 +45,7 @@
                         break;
                     case "4":
                         timer.timer(); // Uruchomienie Timera
-
-                        connectdb.WypiszBaze(); //wyswietlenie calej bazy
+                        connectdb.wypiszbaze(); //wyswietlenie calej bazy
                         break;
                     case "5":
                         isRunning = false;  // Zakończenie pętli i wyjście z metody.
