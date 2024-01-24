@@ -1,9 +1,8 @@
 ﻿namespace Program_Do_Rezerwacji_Lotow
 { // Klasa MainMenu reprezentuje główne menu programu i zarządza nawigacją użytkownika.
-    public class MainMenu
+    public class MainMenu : FlightManager
     {
         // Instancje menedżerów odpowiedzialnych za różne aspekty aplikacji.
-        private readonly FlightManager flightManager;
         private readonly ReservationManager reservationManager;
         private string username;
 
@@ -11,7 +10,6 @@
         public MainMenu(string username)   // Konstruktor MainMenu inicjalizuje menedżerów i inne komponenty.
         {
             this.username = username;
-            flightManager = new FlightManager();
             reservationManager = new ReservationManager(username);
         }
         // Metoda DisplayMenu wyświetla menu i obsługuje interakcje użytkownika.
@@ -33,7 +31,7 @@
                 switch (choice)
                 {
                     case "1":
-                        flightManager.SearchFlights();
+                        SearchFlights();
                         break;
                     case "2":
                         Console.WriteLine("Dokonaj rezerwacji");

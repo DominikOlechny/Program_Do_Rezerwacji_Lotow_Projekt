@@ -5,7 +5,6 @@ namespace Program_Do_Rezerwacji_Lotow
     public class ReservationManager // Klasa ReservationManager zarządza rezerwacjami miejsc na loty.
     {
         // Ścieżka do pliku CSV i lista przechowująca rezerwacje.
-        LoginPanel loginPanel = new LoginPanel();
         private string csvFilePath;
         private List<FlightSeat> flightSeats;
         private string username;
@@ -183,15 +182,5 @@ namespace Program_Do_Rezerwacji_Lotow
 
 
 
-    public class FlightSeat
-    {
-        public string ReservedBy { get; set; }
-        public int FlightId { get; set; }
-        public string SeatNumber { get; set; }
-        public bool IsAvailable { get; set; }
-        public char SeatClass { get; set; } // 'A', 'B', 'C' itd.
-        public bool HasInsurance { get; set; }
-        public bool HasExtraLuggage { get; set; }
-     
-    }
+    
 }
