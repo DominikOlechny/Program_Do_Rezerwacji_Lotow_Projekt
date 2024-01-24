@@ -4,9 +4,9 @@
     {
 
         // Lista przechowująca wszystkie rekordy z pliku CSV.
-        
 
-       
+
+
         public void wypiszbaze() // Wyświetla bazę danych w konsoli.
 
         {
@@ -38,7 +38,7 @@
             Console.WriteLine("Nacisnij dowolny klawisz, aby kontynułowac.....");
             Console.ReadKey();
         }
-        public void wyszukajpoid(string id) // Wyszukuje w bazie danych rekordy o podanym ID rezerwacji.
+        public void wyszukajpoid(string id)  // Wyszukuje w bazie danych rekordy o podanym ID rezerwacji.
         {
             connectdb(); // Wczytanie danych
             bool found = false;

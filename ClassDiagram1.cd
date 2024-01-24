@@ -21,9 +21,15 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.Program_Do_Rezerwacji_Lotow.LoginPanel">
-    <Position X="2.5" Y="3.75" Width="1.5" />
+    <Position X="4" Y="4" Width="1.5" />
+    <InheritanceLine Type="Program_Do_Rezerwacji_Lotow.Listofusers" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="7.25" />
+        <Point X="4.75" Y="5.233" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAEAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>LoginPanel.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -35,21 +41,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.Program">
-    <Position X="0.5" Y="7" Width="1.5" />
+    <Position X="8.75" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.ReservationManager">
-    <Position X="14.5" Y="7" Width="1.5" />
+    <Position X="11.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAEAAAIAAAAA=</HashCode>
       <FileName>ReservationManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.FlightSeat">
-    <Position X="4.5" Y="5.25" Width="1.5" />
+    <Position X="10.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAACBAAAAAAAAAAAAAAAAJAAAAAQAAAAIAAAAA=</HashCode>
       <FileName>FlightSeat.cs</FileName>
@@ -57,7 +63,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.Timer">
-    <Position X="8.75" Y="3.25" Width="1.5" />
+    <Position X="8.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Timer.cs</FileName>
@@ -71,10 +77,17 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.Listofreservations">
-    <Position X="9.5" Y="7" Width="1.5" />
+    <Position X="7.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAJAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Listofreservations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Program_Do_Rezerwacji_Lotow.Listofusers">
+    <Position X="4" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Listofusers.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
