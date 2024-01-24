@@ -57,10 +57,7 @@
                 // Zwrócenie wyniku nieudanego uwierzytelnienia.
                 return (false, null);
             }
-            public string GetLoggedInUsername()
-            {
-                return loggedInUsername;
-            }
+          
         }
 
     }
