@@ -1,6 +1,6 @@
 ﻿namespace Program_Do_Rezerwacji_Lotow
 { // Klasa MainMenu reprezentuje główne menu programu i zarządza nawigacją użytkownika.
-    public class MainMenu : FlightManager
+    internal class MainMenu : FlightManager
     {
         // Instancje menedżerów odpowiedzialnych za różne aspekty aplikacji.
         private readonly ReservationManager reservationManager;

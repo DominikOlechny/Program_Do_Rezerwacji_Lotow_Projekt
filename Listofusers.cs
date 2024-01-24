@@ -8,7 +8,7 @@ namespace Program_Do_Rezerwacji_Lotow
 {
     public abstract class Listofusers
     {
-        protected string loggedInUsername;
+        private string loggedInUsername;
         protected (bool isAuthenticated, string username) VerifyCredentialsFromCsv(string username, string password)
         {
             string currentDirectory = Directory.GetCurrentDirectory(); // Pobranie aktualnego katalogu, w którym działa aplikacja.

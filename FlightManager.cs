@@ -1,7 +1,7 @@
 ﻿namespace Program_Do_Rezerwacji_Lotow
 
 {
-    public class FlightManager : Connectdb // Klasa FlightManager zarządza funkcjonalnościami związanymi z wyszukiwaniem lotów.
+    internal class FlightManager : Connectdb // Klasa FlightManager zarządza funkcjonalnościami związanymi z wyszukiwaniem lotów.
     {
 
         private Timer timer = new Timer();
@@ -20,6 +20,8 @@
                 Console.WriteLine("4. Wyświetl wszystko");
                 Console.WriteLine("5. Cofnij");
                 Console.Write("Wprowadź swój wybór: ");
+                connectdb();
+
 
                 string choice = Console.ReadLine(); // Pobranie wyboru użytkownika.
 
@@ -29,23 +31,23 @@
                         Console.WriteLine("Podaj miejsce odlotu:");
                         string odlot = Console.ReadLine();
                         timer.timer(); // Uruchomienie timera.
-                        wyszukajpoodlotach(odlot); // Wyszukanie lotów po miejscu odlotu.
+                        flighof(odlot); // Wyszukanie lotów po miejscu odlotu.
                         break;
                     case "2":
                         Console.WriteLine("Podaj miejsce przylotu:");
                         string cel = Console.ReadLine();
                         timer.timer();  // Uruchomienie timera.
-                        wyszukajpodpcelowych(cel); // Wyszukanie lotów po miejscu przylotu.
+                        flighton(cel); // Wyszukanie lotów po miejscu przylotu.
                         break;
                     case "3":
                         Console.WriteLine("Podaj numer rezerwacji:");
                         string id = Console.ReadLine();
                         timer.timer(); // Uruchomienie timera.
-                        wyszukajpoid(id); // numerze rezerwacji
+                        searchbyid(id); // numerze rezerwacji
                         break;
                     case "4":
                         timer.timer(); // Uruchomienie Timera
-                        wypiszbaze(); //wyswietlenie calej bazy
+                        writebase(); //wyswietlenie calej bazy
                         break;
                     case "5":
                         isRunning = false;  // Zakończenie pętli i wyjście z metody.

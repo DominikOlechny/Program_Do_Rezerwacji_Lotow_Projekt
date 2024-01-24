@@ -1,16 +1,16 @@
 ﻿namespace Program_Do_Rezerwacji_Lotow
 {
-    public abstract class Connectdb : Listoflights // Klasa Connectdb zarządza połączeniem z bazą danych, która jest reprezentowana przez plik CSV.
+    internal class Connectdb : Listoflights // Klasa Connectdb zarządza połączeniem z bazą danych, która jest reprezentowana przez plik CSV.
     {
 
         // Lista przechowująca wszystkie rekordy z pliku CSV.
 
 
 
-        public void wypiszbaze() // Wyświetla bazę danych w konsoli.
+        protected void writebase() // Wyświetla bazę danych w konsoli.
 
         {
-            connectdb(); //połączenie z bazą danych zostało nawiązane.
+           
             if (allFields.Count == 0)// Sprawdzenie czy lista danych nie jest pusta.
             {
                 Console.WriteLine("Brak danych do wyświetlenia.");
@@ -38,9 +38,9 @@
             Console.WriteLine("Nacisnij dowolny klawisz, aby kontynułowac.....");
             Console.ReadKey();
         }
-        public void wyszukajpoid(string id)  // Wyszukuje w bazie danych rekordy o podanym ID rezerwacji.
+        protected void searchbyid(string id)  // Wyszukuje w bazie danych rekordy o podanym ID rezerwacji.
         {
-            connectdb(); // Wczytanie danych
+            
             bool found = false;
 
             foreach (var fields in allFields) // Iteracja przez listę w poszukiwaniu rekordów o podanym ID.
@@ -71,9 +71,9 @@
             Console.ReadKey();
         }
 
-        public void wyszukajpoodlotach(string odlot) // Wyszukuje w bazie danych rekordy na podstawie miejsca odlotu.
+        protected void flighof(string odlot) // Wyszukuje w bazie danych rekordy na podstawie miejsca odlotu.
         {
-            connectdb(); //dane zostały wczytane
+           
             bool found = false;
 
             foreach (var fields in allFields)// Iteracja przez wszystkie rekordy w poszukiwaniu odlotu.
@@ -103,9 +103,9 @@
             Console.ReadKey();
         }
 
-        public void wyszukajpodpcelowych(string cel) // Wyszukuje w bazie danych rekordy na podstawie miejsca przylotu.
+        protected void flighton(string cel) // Wyszukuje w bazie danych rekordy na podstawie miejsca przylotu.
         {
-            connectdb(); // dane zostały wczytane
+          
             bool found = false;
 
             foreach (var fields in allFields) // Iteracja przez wszystkie rekordy w poszukiwaniu przylotu.

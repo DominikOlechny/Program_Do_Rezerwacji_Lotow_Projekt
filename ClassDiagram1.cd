@@ -1,33 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Program_Do_Rezerwacji_Lotow.Connectdb">
-    <Position X="3" Y="0.75" Width="1.5" />
-    <InheritanceLine Type="Program_Do_Rezerwacji_Lotow.Listoflights" ManuallyRouted="true">
-      <Path>
-        <Point X="7.75" Y="1.403" />
-        <Point X="4.5" Y="1.403" />
-      </Path>
-    </InheritanceLine>
+    <Position X="12.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAAAAAAABAAAAAEAAAAAAAAAQAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAgAQAAAABAAAAAAAAAAAAAA=</HashCode>
       <FileName>Connectdb.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.FlightManager">
-    <Position X="11.5" Y="0.75" Width="1.5" />
+    <Position X="14.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FlightManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.Program_Do_Rezerwacji_Lotow.LoginPanel">
-    <Position X="4" Y="4" Width="1.5" />
-    <InheritanceLine Type="Program_Do_Rezerwacji_Lotow.Listofusers" ManuallyRouted="true">
-      <Path>
-        <Point X="4.75" Y="7.25" />
-        <Point X="4.75" Y="5.233" />
-      </Path>
-    </InheritanceLine>
+    <Position X="6" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>LoginPanel.cs</FileName>
@@ -48,14 +36,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.ReservationManager">
-    <Position X="11.75" Y="6.75" Width="1.5" />
+    <Position X="18" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAEAAAIAAAAA=</HashCode>
       <FileName>ReservationManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.FlightSeat">
-    <Position X="10.5" Y="4" Width="1.5" />
+    <Position X="5.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAACBAAAAAAAAAAAAAAAAJAAAAAQAAAAIAAAAA=</HashCode>
       <FileName>FlightSeat.cs</FileName>
@@ -70,21 +58,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.Listoflights">
-    <Position X="7.75" Y="0.5" Width="1.5" />
+    <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Listoflights.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.Listofreservations">
-    <Position X="7.75" Y="6.75" Width="1.5" />
+    <Position X="15" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAJAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Listofreservations.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.Listofusers">
-    <Position X="4" Y="7.25" Width="1.5" />
+    <Position X="11.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Listofusers.cs</FileName>

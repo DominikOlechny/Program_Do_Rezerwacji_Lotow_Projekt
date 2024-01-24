@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Program_Do_Rezerwacji_Lotow
 {
-    public abstract class Listoflights
+    internal class Listoflights
     {
         public List<string[]> allFields = new List<string[]>();
-        public void connectdb()   /// Łączy się z bazą danych przez wczytanie danych z pliku CSV.
+        protected void connectdb()   /// Łączy się z bazą danych przez wczytanie danych z pliku CSV.
         {
             string currentDirectory = Directory.GetCurrentDirectory(); // Ścieżka do bieżącego katalogu aplikacji.
             string filePath = Path.Combine(currentDirectory, "rezerwacje_lotow_nopl.csv");    // Pełna ścieżka do pliku z rezerwacjami lotów

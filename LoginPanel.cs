@@ -6,7 +6,7 @@
         // Zawiera metody do logowania się do systemu i zarządzania informacjami uwierzytelniającymi.
         public class LoginPanel : Listofusers
         {
-            
+
             //User_527,*xwR(t|A^#XM - testowy user do testowa
             //lub admin,admin
             public (bool isAuthenticated, string username) Authenticate()  // Metoda Authenticate służy do uwierzytelniania użytkownika.
@@ -27,8 +27,8 @@
                 return VerifyCredentialsFromCsv(username, password);    // Zwróć wynik uwierzytelnienia oraz nazwę użytkownika.
             }
 
-           
-          
+
+
         }
 
     }
