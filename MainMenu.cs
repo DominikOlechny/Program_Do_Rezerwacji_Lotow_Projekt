@@ -10,7 +10,7 @@
         public MainMenu(string username)   // Konstruktor MainMenu inicjalizuje menedżerów i inne komponenty.
         {
             this.username = username;
-            reservationManager = new ReservationManager(username);
+            this.reservationManager = new ReservationManager(username);
         }
         // Metoda DisplayMenu wyświetla menu i obsługuje interakcje użytkownika.
         public void DisplayMenu()
