@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Program_Do_Rezerwacji_Lotow
 {
-    public abstract class Listofusers
+    /// <summary>
+    /// Klasa wczytująca listę zarejestrowanych userów z CSV i autotykująca logowanie
+    /// </summary>
+    abstract class ConToDBListofusers
     {
-        private string loggedInUsername;
-        protected (bool isAuthenticated, string username) VerifyCredentialsFromCsv(string username, string password)
+        private static string loggedInUsername;
+        protected static (bool isAuthenticated, string username) VerifyCredentialsFromCsv(string username, string password)
         {
             string currentDirectory = Directory.GetCurrentDirectory(); // Pobranie aktualnego katalogu, w którym działa aplikacja.
             string csvFilePath = Path.Combine(currentDirectory, "login_credentials.csv");    // Utworzenie pełnej ścieżki do pliku CSV zawierającego dane uwierzytelniające.

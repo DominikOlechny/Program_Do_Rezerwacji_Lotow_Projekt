@@ -2,12 +2,16 @@
 
 namespace Program_Do_Rezerwacji_Lotow
 {
-    class Program // Klasa Program jest punktem wejścia aplikacji.
+    class Program : LoginPanel
     {
+        /// <summary>
+        /// Klasa Program jest punktem wejścia aplikacji.
+        /// </summary>
+        
         static void Main(string[] args)   // Metoda Main to główna metoda uruchamiająca aplikację.
         {
-            LoginPanel loginPanel = new LoginPanel();
-            (bool isAuthenticated, string username) = loginPanel.Authenticate();
+            
+            (bool isAuthenticated, string username) = Authenticate(); //
 
             if (!isAuthenticated)
             {
@@ -18,7 +22,7 @@ namespace Program_Do_Rezerwacji_Lotow
             Console.WriteLine($"Witamy użytkownika {username}!");
             // Dalej można wykorzystać nazwę użytkownika w logice programu
             MainMenu mainMenu = new MainMenu(username);
-            mainMenu.DisplayMenu();
+            mainMenu.DisplayMenu(); //wyswietlenie glownego menu
         }
     }
 }

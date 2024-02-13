@@ -2,14 +2,17 @@
 {
     namespace Program_Do_Rezerwacji_Lotow
     {
-        // Klasa LoginPanel jest odpowiedzialna za proces autentykacji użytkownika w aplikacji.
-        // Zawiera metody do logowania się do systemu i zarządzania informacjami uwierzytelniającymi.
-        public class LoginPanel : Listofusers
+        /// <summary>
+        /// Klasa LoginPanel jest odpowiedzialna za proces autentykacji użytkownika w aplikacji.
+        /// Zawiera metody do logowania się do systemu i zarządzania informacjami uwierzytelniającymi.
+        /// </summary>
+        
+        class LoginPanel : ConToDBListofusers
         {
 
             //User_527,*xwR(t|A^#XM - testowy user do testowa
             //lub admin,admin
-            public (bool isAuthenticated, string username) Authenticate()  // Metoda Authenticate służy do uwierzytelniania użytkownika.
+            public static (bool isAuthenticated, string username) Authenticate()  // Metoda Authenticate służy do uwierzytelniania użytkownika.
                                                                            // Metoda Authenticate wykonuje proces logowania, prosząc użytkownika o podanie nazwy użytkownika i hasła.
                                                                            // Zwraca krotkę składającą się z dwóch elementów:
                                                                            // 1. isAuthenticated (bool) - flaga wskazująca, czy uwierzytelnienie się powiodło,

@@ -1,49 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Program_Do_Rezerwacji_Lotow.Connectdb">
-    <Position X="12.25" Y="1.75" Width="1.5" />
+  <Class Name="Program_Do_Rezerwacji_Lotow.UseDatabaseListOfFlights">
+    <Position X="11.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAAAAAgAQAAAABAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Connectdb.cs</FileName>
+      <FileName>UseDatabaseListOfFlights.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Program_Do_Rezerwacji_Lotow.FlightManager">
-    <Position X="14.75" Y="0.5" Width="1.5" />
+  <Class Name="Program_Do_Rezerwacji_Lotow.FlightManagerMenu">
+    <Position X="13.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>FlightManager.cs</FileName>
+      <FileName>FlightManagerMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.Program_Do_Rezerwacji_Lotow.LoginPanel">
-    <Position X="6" Y="7.75" Width="1.5" />
+    <Position X="10.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>LoginPanel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.MainMenu">
-    <Position X="14.75" Y="3.25" Width="1.5" />
+    <Position X="13.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAQAAAAAA=</HashCode>
       <FileName>MainMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.Program">
-    <Position X="8.75" Y="5" Width="1.5" />
+    <Position X="6.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.ReservationManager">
-    <Position X="18" Y="7" Width="1.5" />
+    <Position X="21" Y="3.5" Width="1.5" />
+    <InheritanceLine Type="Program_Do_Rezerwacji_Lotow.ConToDatabaseFlightSeat" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.375" Y="3.75" />
+        <Point X="19.375" Y="3.125" />
+        <Point X="22.875" Y="3.125" />
+        <Point X="22.875" Y="5.043" />
+        <Point X="22.5" Y="5.043" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAEAAAIAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAEAAAABAAAAAAEAAAEAAAAAAEAAAIAAAAA=</HashCode>
       <FileName>ReservationManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.FlightSeat">
-    <Position X="5.25" Y="3.75" Width="1.5" />
+    <Position X="15" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAACBAAAAAAAAAAAAAAAAJAAAAAQAAAAIAAAAA=</HashCode>
       <FileName>FlightSeat.cs</FileName>
@@ -51,31 +60,31 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Program_Do_Rezerwacji_Lotow.Timer">
-    <Position X="8.75" Y="3.75" Width="1.5" />
+    <Position X="15" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Timer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Program_Do_Rezerwacji_Lotow.Listoflights">
-    <Position X="9.75" Y="0.5" Width="1.5" />
+  <Class Name="Program_Do_Rezerwacji_Lotow.ConToDatabaseListOfFlights">
+    <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Listoflights.cs</FileName>
+      <FileName>ConToDatabaseListOfFlights.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Program_Do_Rezerwacji_Lotow.Listofreservations">
-    <Position X="15" Y="7" Width="1.5" />
+  <Class Name="Program_Do_Rezerwacji_Lotow.ConToDatabaseFlightSeat">
+    <Position X="18.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAJAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Listofreservations.cs</FileName>
+      <FileName>ConToDatabaseFlightSeat.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Program_Do_Rezerwacji_Lotow.Listofusers">
-    <Position X="11.25" Y="7.5" Width="1.5" />
+  <Class Name="Program_Do_Rezerwacji_Lotow.ConToDBListofusers">
+    <Position X="10.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Listofusers.cs</FileName>
+      <FileName>ConToDBListofusers.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

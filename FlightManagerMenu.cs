@@ -1,15 +1,21 @@
 ﻿namespace Program_Do_Rezerwacji_Lotow
 
 {
-    internal class FlightManager : Connectdb // Klasa FlightManager zarządza funkcjonalnościami związanymi z wyszukiwaniem lotów.
+    internal class FlightManagerMenu : UseDatabaseListOfFlights
+    /// <summary>
+    /// Klasa do wyszukiwania lotów, dziedziczy po klasie connectdb
+    /// </summary>
     {
 
-        private Timer timer = new Timer();
+        Timer timer = new Timer();
 
         public void SearchFlights() // Metoda SearchFlights wyświetla menu pozwalające użytkownikowi na wyszukiwanie lotów
-                                    // według różnych kryteriów oraz obsługuje interakcję z użytkownikiem.
+                                    // według różnych kryteriów oraz obsługuje interakcję z użytkownikiem.                          
         {
+            connectdb(); // podlaczenie do bazy
             bool isRunning = true;  // Zmienna kontrolująca działanie pętli menu.
+
+             
             while (isRunning)
             {
                 // Prezentacja opcji menu.
@@ -20,7 +26,8 @@
                 Console.WriteLine("4. Wyświetl wszystko");
                 Console.WriteLine("5. Cofnij");
                 Console.Write("Wprowadź swój wybór: ");
-                connectdb();
+                
+
 
 
                 string choice = Console.ReadLine(); // Pobranie wyboru użytkownika.
