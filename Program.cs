@@ -16,6 +16,7 @@ namespace Program_Do_Rezerwacji_Lotow
             if (!isAuthenticated)
             {
                 Console.WriteLine("Logowanie nieudane. Program zostanie zakończony.");
+                Console.ReadKey();
                 return;
             }
 
